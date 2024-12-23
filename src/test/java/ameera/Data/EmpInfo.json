@@ -1,0 +1,20 @@
+[
+  {
+    "employeeName": "Ameera",
+    "employeeMiddleName": "Abduallah",
+    "employeeLastName": "Al-mohammadi",
+    "username": "ameera.s"
+  },
+  {
+    "employeeName": "John",
+    "employeeMiddleName": "Michael",
+    "employeeLastName": "Doe",
+    "username": "john.doe"
+  },
+  {
+    "employeeName": "Emily",
+    "employeeMiddleName": "Rose",
+    "employeeLastName": "Johnson",
+    "username": "emily.j"
+  }
+]

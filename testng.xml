@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="ameera.TestComponents.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Manage Employee Test">
+		<classes>
+			<class name="ameera.Tests.ManageEmployeeTest">
+				<methods>
+					<exclude name="updateEmployee"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test thread-count="5" name="Manage Leave Test">
+		<classes>
+			<class name="ameera.Tests.ManageLeaveTest" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Manage Recruitment Test">
+		<classes>
+			<class name="ameera.Tests.ManageRecruitmentTest" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Manage Claim Test">
+		<classes>
+			<class name="ameera.Tests.ManageClaimTest" />
+		</classes>
+	</test>
+</suite> 

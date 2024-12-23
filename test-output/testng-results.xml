@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-23T12:38:02 AST" name="Suite" finished-at="2024-12-23T12:39:14 AST" duration-ms="71617">
+    <groups>
+    </groups>
+    <test started-at="2024-12-23T12:38:02 AST" name="Manage Employee Test" finished-at="2024-12-23T12:38:28 AST" duration-ms="26296">
+      <class name="ameera.Tests.ManageEmployeeTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ameera.Tests.ManageEmployeeTest@43f82e78]" started-at="2024-12-23T12:38:03 AST" name="launchApplication" finished-at="2024-12-23T12:38:09 AST" duration-ms="6143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addEmployee(java.util.HashMap)[pri:0, instance:ameera.Tests.ManageEmployeeTest@43f82e78]" started-at="2024-12-23T12:38:09 AST" name="addEmployee" data-provider="getData" finished-at="2024-12-23T12:38:17 AST" duration-ms="8047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{employeeName=Ameera, employeeLastName=Al-mohammadi, employeeMiddleName=Abduallah, username=ameera.s}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEmployee -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ameera.Tests.ManageEmployeeTest@43f82e78]" started-at="2024-12-23T12:38:17 AST" name="launchApplication" finished-at="2024-12-23T12:38:20 AST" duration-ms="3291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="deleteEmployee(java.util.HashMap)[pri:0, instance:ameera.Tests.ManageEmployeeTest@43f82e78]" started-at="2024-12-23T12:38:20 AST" name="deleteEmployee" data-provider="getData" finished-at="2024-12-23T12:38:28 AST" depends-on-methods="ameera.Tests.ManageEmployeeTest.addEmployee" duration-ms="7945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{employeeName=Ameera, employeeLastName=Al-mohammadi, employeeMiddleName=Abduallah, username=ameera.s}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteEmployee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ameera.Tests.ManageEmployeeTest@43f82e78]" started-at="2024-12-23T12:38:28 AST" name="tearDown" finished-at="2024-12-23T12:38:28 AST" duration-ms="372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ameera.Tests.ManageEmployeeTest -->
+    </test> <!-- Manage Employee Test -->
+    <test started-at="2024-12-23T12:38:29 AST" name="Manage Leave Test" finished-at="2024-12-23T12:38:43 AST" duration-ms="13489">
+      <class name="ameera.Tests.ManageLeaveTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ameera.Tests.ManageLeaveTest@5fe1ce85]" started-at="2024-12-23T12:38:29 AST" name="launchApplication" finished-at="2024-12-23T12:38:34 AST" duration-ms="4557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addLeaveRequest()[pri:0, instance:ameera.Tests.ManageLeaveTest@5fe1ce85]" started-at="2024-12-23T12:38:34 AST" name="addLeaveRequest" finished-at="2024-12-23T12:38:42 AST" duration-ms="8317" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[FMLA option not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: FMLA option not found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: driver.version: unknown
+at ameera.PageObject.LeavePage.lambda$1(LeavePage.java:62)
+at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+at ameera.PageObject.LeavePage.addLeaveRequest(LeavePage.java:62)
+at ameera.Tests.ManageLeaveTest.addLeaveRequest(ManageLeaveTest.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addLeaveRequest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ameera.Tests.ManageLeaveTest@5fe1ce85]" started-at="2024-12-23T12:38:43 AST" name="tearDown" finished-at="2024-12-23T12:38:43 AST" duration-ms="379" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ameera.Tests.ManageLeaveTest -->
+    </test> <!-- Manage Leave Test -->
+    <test started-at="2024-12-23T12:38:43 AST" name="Manage Recruitment Test" finished-at="2024-12-23T12:38:57 AST" duration-ms="13908">
+      <class name="ameera.Tests.ManageRecruitmentTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ameera.Tests.ManageRecruitmentTest@57abad67]" started-at="2024-12-23T12:38:43 AST" name="launchApplication" finished-at="2024-12-23T12:38:48 AST" duration-ms="4667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addRecruitment()[pri:0, instance:ameera.Tests.ManageRecruitmentTest@57abad67]" started-at="2024-12-23T12:38:48 AST" name="addRecruitment" finished-at="2024-12-23T12:38:57 AST" duration-ms="8979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addRecruitment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ameera.Tests.ManageRecruitmentTest@57abad67]" started-at="2024-12-23T12:38:57 AST" name="tearDown" finished-at="2024-12-23T12:38:57 AST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ameera.Tests.ManageRecruitmentTest -->
+    </test> <!-- Manage Recruitment Test -->
+    <test started-at="2024-12-23T12:38:57 AST" name="Manage Claim Test" finished-at="2024-12-23T12:39:14 AST" duration-ms="16607">
+      <class name="ameera.Tests.ManageClaimTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ameera.Tests.ManageClaimTest@576f63f6]" started-at="2024-12-23T12:38:57 AST" name="launchApplication" finished-at="2024-12-23T12:39:02 AST" duration-ms="4714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="addClaim()[pri:0, instance:ameera.Tests.ManageClaimTest@576f63f6]" started-at="2024-12-23T12:39:02 AST" name="addClaim" finished-at="2024-12-23T12:39:13 AST" duration-ms="11457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addClaim -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ameera.Tests.ManageClaimTest@576f63f6]" started-at="2024-12-23T12:39:13 AST" name="tearDown" finished-at="2024-12-23T12:39:14 AST" duration-ms="429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ameera.Tests.ManageClaimTest -->
+    </test> <!-- Manage Claim Test -->
+  </suite> <!-- Suite -->
+</testng-results>
